@@ -1,0 +1,20 @@
+nav{
+    height: fit-content;
+    background: #000;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    li{
+        margin: 15px;
+    }
+}
+
+/*mode*/
+.sun{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: yellow;
+}

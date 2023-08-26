@@ -1,0 +1,25 @@
+@import './partials/defaults';
+@import './partials/animation';
+@import './partials/navbar';
+@import './partials/footer';
+
+/*lets start from the begining*/
+body{
+    height: 100%;
+    background: #000;
+}
+
+/*main page*/
+main{
+    background: #242d68;
+    padding: 10px 0;
+}
+section{
+    height: calc(100vh - 50px);
+    background: #000;
+    margin: 20px 10px;
+}
+
+#second{
+    border-radius: 40px;
+}
