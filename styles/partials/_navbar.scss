@@ -1,20 +1,45 @@
 nav{
-    height: fit-content;
     background: #000;
+    text-transform: uppercase;
 }
 
 .nav-links ul{
     display: flex;
     justify-content: space-between;
     li{
-        margin: 15px;
+        font-family: 'text-bold';
+        font-size: 1.05rem;
+        letter-spacing: 1px;
+        margin: 20px 25px 15px;
+        transition: color 0.5s cubic-bezier(0.33, -0.2, 0.67, 1.37);
+        cursor: pointer;
+        &:hover{
+            color: #00b0ee;
+        }
     }
 }
 
 /*mode*/
-.sun{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background: yellow;
+.theme{
+    position: relative;
+    z-index: 2;
+    .mode{
+        cursor: pointer;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        border: 1px solid red;
+    }
+    .sun{
+        background-color: yellow;
+        position: fixed;
+        top: 100px;
+        right: 10px;
+    }
+    .moon{
+        background-color: grey;
+        position: fixed;
+        top: 60px;
+        right: 10px;
+    }
 }
