@@ -1,0 +1,111 @@
+/*jenna. about her*/
+.herself{
+    position: relative;
+    font-family: 'nicky';
+    font-size: 2.3rem;
+    text-align: center;
+}
+.who{
+    font-family: 'script';
+    font-size: 3rem;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    span{
+        cursor: pointer;
+    }
+}
+
+/* CSS */
+.information {
+    transition: color 0.3s ease;
+}
+
+.name{
+    text-transform: uppercase;
+    font-family: 'text';
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+.flag{
+    font-family: 'nicky';
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    img{
+        width: 40px;
+        border-radius: 5px;
+    }
+}
+
+.age{
+    position: absolute;
+    top: 25%;
+    left: -50px;
+}
+.birthday{
+    position: absolute;
+    top: 25%;
+    right: -30%;
+}
+.is{
+    position: absolute;
+    display: none;
+    top: 25%;
+}
+.introvert{
+    position: absolute;
+    top: 65%;
+    left: -40%;
+}
+.and{
+    position: absolute;
+    top: 65%;
+    right: -50%;
+}
+
+#first{
+    position: relative;
+    .monteuse{
+        position: absolute;
+        font-family: 'nicky';
+        font-size: 3rem;
+        transform: rotate(-45deg);
+        top: 25%;
+        left: 15%;
+    }
+    .ui{
+        position: absolute;
+        font-family: 'nicky';
+        font-size: 3rem;
+        transform: rotate(45deg);
+        top: 25%;
+        right: 15%;
+    }
+    .droit{
+        position: absolute;
+        font-family: 'nicky';
+        font-size: 3rem;
+        transform: rotate(45deg);
+        bottom: 25%;
+        left: 15%;
+    }
+    .redactrice{
+        position: absolute;
+        font-family: 'nicky';
+        font-size: 3rem;
+        transform: rotate(-45deg);
+        bottom: 25%;
+        right: 15%;
+    }
+}

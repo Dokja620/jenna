@@ -1,0 +1,18 @@
+/*variables*/
+:root{
+    --primary-color: #242d68;
+    --secondary-color: #fff;
+    --text-dark: #fff;
+    --text-light: #000;
+}
+
+/*mini-reset*/
+*{
+    font-weight: normal;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--text-dark);
+}

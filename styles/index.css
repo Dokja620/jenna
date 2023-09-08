@@ -1,0 +1,330 @@
+/*variables*/
+:root {
+  --primary-color: #242d68;
+  --secondary-color: #fff;
+  --text-dark: #fff;
+  --text-light: #000;
+}
+
+/*mini-reset*/
+* {
+  font-weight: normal;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/*text fonts*/
+@font-face {
+  font-family: "text";
+  src: url(/fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "text-bold";
+  src: url(/fonts/lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "text-black";
+  src: url(/fonts/lato/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "text-italic";
+  src: url(/fonts/lato/Lato-Italic.ttf);
+}
+/*jenna fonts*/
+@font-face {
+  font-family: "script";
+  src: url(/fonts/playlist_script/playlist_script.otf);
+}
+@font-face {
+  font-family: "nicky";
+  src: url(/fonts/Nickainley-Normal.otf);
+}
+/*Star background animation*/
+.star1 img {
+  animation: animate 20s ease-in-out infinite;
+}
+
+.star2 img {
+  animation: animate 20s ease-in-out -7s infinite;
+}
+
+.star3 img {
+  animation: animate 20s ease-in-out -6s infinite;
+}
+
+.star4 img {
+  animation: animate 20s ease-in-out -5s infinite;
+}
+
+.star5 img {
+  animation: animate 20s ease-in-out -4s infinite;
+}
+
+.star6 img {
+  animation: animate 20s ease-in-out -3s infinite;
+}
+
+.star7 img {
+  animation: animate 20s ease-in-out -2s infinite;
+}
+
+.star8 img {
+  animation: animate 20s ease-in-out -1s infinite;
+}
+
+@keyframes animate {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    opacity: 0;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    opacity: 1;
+  }
+}
+nav {
+  background: #000;
+  text-transform: uppercase;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links ul li {
+  font-family: "text-bold";
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  margin: 20px 25px 15px;
+  transition: color 0.5s cubic-bezier(0.33, -0.2, 0.67, 1.37);
+  cursor: pointer;
+}
+.nav-links ul li:hover {
+  color: #00b0ee;
+}
+
+/*mode*/
+.theme {
+  position: relative;
+  z-index: 2;
+}
+.theme .mode {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+.theme .sun {
+  background-color: yellow;
+  position: fixed;
+  top: 100px;
+  right: 10px;
+}
+.theme .moon {
+  background-color: grey;
+  position: fixed;
+  top: 60px;
+  right: 10px;
+}
+
+.infos {
+  text-align: center;
+  margin: 100px 0;
+  line-height: 2em;
+  font-family: "text";
+  font-size: 1.07rem;
+}
+.infos span {
+  font-family: "text-bold";
+  color: #fff;
+  letter-spacing: 2px;
+}
+.infos p {
+  color: #b7b7b7;
+}
+
+/*jenna. about her*/
+.herself {
+  position: relative;
+  font-family: "nicky";
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.who {
+  font-family: "script";
+  font-size: 3rem;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+.who span {
+  cursor: pointer;
+}
+
+/* CSS */
+.information {
+  transition: color 0.3s ease;
+}
+
+.name {
+  text-transform: uppercase;
+  font-family: "text";
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.flag {
+  font-family: "nicky";
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+.flag img {
+  width: 40px;
+  border-radius: 5px;
+}
+
+.age {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+}
+
+.birthday {
+  position: absolute;
+  top: 25%;
+  right: -30%;
+}
+
+.is {
+  position: absolute;
+  display: none;
+  top: 25%;
+}
+
+.introvert {
+  position: absolute;
+  top: 65%;
+  left: -40%;
+}
+
+.and {
+  position: absolute;
+  top: 65%;
+  right: -50%;
+}
+
+#first {
+  position: relative;
+}
+#first .monteuse {
+  position: absolute;
+  font-family: "nicky";
+  font-size: 3rem;
+  transform: rotate(-45deg);
+  top: 25%;
+  left: 15%;
+}
+#first .ui {
+  position: absolute;
+  font-family: "nicky";
+  font-size: 3rem;
+  transform: rotate(45deg);
+  top: 25%;
+  right: 15%;
+}
+#first .droit {
+  position: absolute;
+  font-family: "nicky";
+  font-size: 3rem;
+  transform: rotate(45deg);
+  bottom: 25%;
+  left: 15%;
+}
+#first .redactrice {
+  position: absolute;
+  font-family: "nicky";
+  font-size: 3rem;
+  transform: rotate(-45deg);
+  bottom: 25%;
+  right: 15%;
+}
+
+/*lets start from the begining*/
+body {
+  height: 100%;
+  background: #000;
+}
+
+/*main page*/
+main {
+  background: var(--primary-color);
+  padding: 10px 0;
+}
+
+section {
+  height: calc(100vh - 50px);
+  background: #000;
+  margin: 1.25rem;
+}
+
+#first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#first .pic {
+  border-radius: 50%;
+  width: fit-content;
+  overflow: hidden;
+  border: 1.25rem solid rgba(216, 168, 92, 0.1450980392);
+}
+#first .pic img {
+  max-width: 200px;
+}
+
+#second {
+  border-radius: 40px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #000200 url(../images/planets/ico_me.jpg) 75% center/15vw no-repeat;
+}
+#second .star {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+#second .star img {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/*planets*/
+.planets {
+  overflow: hidden;
+  width: fit-content;
+  border-radius: 50%;
+  border: 1rem solid #fff;
+  background: #fff;
+}
+.planets img {
+  height: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */
