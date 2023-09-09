@@ -84,6 +84,80 @@
     opacity: 1;
   }
 }
+/*text animation*/
+.information, .does {
+  transition: animation 1s ease-in-out;
+}
+
+.information.active, .does.active {
+  animation: lights 3s ease-in-out infinite;
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), 1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
+  }
+  30% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), 0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  40% {
+    color: hsl(230deg, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40deg, 100%, 60%, 0.2), 0.25em 0.125em 0.125em hsla(200deg, 100%, 60%, 0.4);
+  }
+  70% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), -0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  100% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), -1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
+  }
+}
+/* */
+.about {
+  animation: in 2s linear 0s infinite reverse;
+  animation-play-state: paused;
+}
+
+.about:hover {
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear backwards;
+  animation-play-state: running;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  0% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), 1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
+  }
+  30% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), 0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  40% {
+    color: hsl(230deg, 100%, 95%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40deg, 100%, 60%, 0.2), 0.25em 0.125em 0.125em hsla(200deg, 100%, 60%, 0.4);
+  }
+  70% {
+    color: hsl(230deg, 80%, 90%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.5), 0 0 0.125em hsla(320deg, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40deg, 100%, 60%, 0.2), -0.5em 0.125em 0.25em hsla(200deg, 100%, 60%, 0.4);
+  }
+  100% {
+    color: hsl(230deg, 40%, 80%);
+    text-shadow: 0 0 1em hsla(320deg, 100%, 50%, 0.2), 0 0 0.125em hsla(320deg, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40deg, 100%, 60%, 0), -1em 0.125em 0.5em hsla(200deg, 100%, 60%, 0);
+  }
+}
 nav {
   background: #000;
   text-transform: uppercase;
